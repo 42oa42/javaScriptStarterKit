@@ -85,6 +85,6 @@ let newProductName, newUnitPrice, newQuantity;
   unitPrice: newUnitPrice,
   quantity: newQuantity,
 } = { productName: "Elma", unitPrice: 10, quantity: 5 });
-console.log(newQuantity)
-console.log(newProductName)
-console.log(newUnitPrice)
+console.log(newQuantity);
+console.log(newProductName);
+console.log(newUnitPrice);

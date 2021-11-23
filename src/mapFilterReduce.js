@@ -21,6 +21,14 @@ cart.map((product) => { //sepetteki ürünleri bu sayede hesaplarız
 });
 console.log("</ul>");
 
+let total = cart.reduce((acc,product)=> acc + product.quatity  * product.unitPrice,0)
+
+console.log(total)
+
+let quantityOver2 =   cart.filter(product=>product.quatity<5 && product.unitPrice<4000)//Filtreler
+
+console.log(quantityOver2)
+
 let addToCart = (sepet) => {
   sepet.push({ id: 7, productName: "Ruhsat", quatity: 1, unitPrice: 20 }); //ekleme yapar
 };
